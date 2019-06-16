@@ -10,7 +10,6 @@ html {
 
 }
 body {
-  max-width: 2400px;
   overflow: auto;
 }
 h1 {
@@ -170,7 +169,7 @@ h1 {
   font-size: x-large;
   display: flex;
   align-items: center;
-  text-decoration: underline solid red;
+  text-decoration: underline solid grey;
 
   
 }
