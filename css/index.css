@@ -130,6 +130,8 @@ h1 {
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 5px;
 }
 
 /*One Project*/
@@ -139,15 +141,15 @@ h1 {
   margin-top: 20px;
   margin-bottom: 10px;
   flex-wrap: wrap;
+  padding: 5px;
 }
 
 /*Project Info */
 .project-info-container{
   display: flex;
-  flex: 3;
+  flex:3;
   /*align-items: flex-start , center, flex-end;*/
   /*flex-basis : 70%; instead of using basis*/
-  padding: 5px;
 }
 
 .project-info-box{
@@ -169,6 +171,7 @@ h1 {
   display: flex;
   align-items: center;
   text-decoration: underline solid red;
+
   
 }
 .project-tags {
@@ -177,6 +180,7 @@ h1 {
   margin-top: 5px;
   display: flex;
   align-items: center;
+
   
 }
 
@@ -197,6 +201,7 @@ h1 {
   order: 3;
   display: flex;
   align-items: center;
+  overflow: auto;
 }
 
 .project-links {
@@ -205,8 +210,8 @@ h1 {
   flex: 1;
   display: flex;
   align-items: center;
-
   flex-wrap: wrap;
+  overflow: auto;
 }
 
 /*each link*/
@@ -217,18 +222,20 @@ h1 {
 /*Project Pictures*/
 .project-demonstration{
   display: flex;
+  flex:2;
   padding: 10px;
   width: auto;
-  justify-content: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .project-pic{ 
 }
 .stick-left{
   order: 1;
+  justify-content: flex-end;
 }
 
 .stick-right{
+  justify-content: left;
   order: 2;
 }
 
@@ -238,13 +245,14 @@ a {
   color: black;
 }
 .project-links a:hover{
+  color: red;
   box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
   background-color: grey;
 }
 
 /*hyperlink stay black after visit*/
 a:visited{
-  color: black;
+  color: red;
 }
 
 footer{
