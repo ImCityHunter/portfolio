@@ -234,11 +234,10 @@ h1 {
 .stick-left{
   order: 1;
   padding-left: 20px;
-  justify-content: flex-end;
 }
 
 .stick-right{
-  justify-content: left;
+  padding-right: 20px;
   order: 2;
 }
 
