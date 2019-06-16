@@ -107,6 +107,16 @@ h1 {
   transform: rotate(-90deg);
 }
 
+.project-header{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: xx-large;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 
 /*Project List*/
 
