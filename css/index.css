@@ -205,7 +205,7 @@ h1 {
   order: 3;
   display: flex;
   align-items: center;
-  overflow: auto;
+  white-space: initial;
 }
 
 .project-links {
