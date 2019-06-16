@@ -1,7 +1,13 @@
 
 html {
+
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
+body {
+  font-family: fantasy, sans-serif;
 }
 h1 {
   font-size: 10vw;
@@ -16,6 +22,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../img/head.jpg');
+  overflow: hidden;
   
 }
 .cover-transparency{
@@ -107,30 +114,26 @@ h1 {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 /*One Project*/
 .project-container {
   display: flex;
+  flex-direction: row;
   margin-top: 20px;
   margin-bottom: 10px;
-  height: auto;
-  align-items: center;
-
+  flex-wrap: wrap;
 }
 
 /*Project Info */
 .project-info-container{
   display: flex;
-  vertical-align: middle;
-  justify-content: center;
-  height: 40vh;
+  flex: 3;
   /*align-items: flex-start , center, flex-end;*/
-  flex-basis : 70%; /*instead of using basis*/
-  padding: 15px;
-  width: 70%;
-
+  /*flex-basis : 70%; instead of using basis*/
+  padding: 5px;
 }
 
 .project-info-box{
@@ -139,8 +142,6 @@ h1 {
   width:inherit;
   text-align: left;
   flex-direction: column;
-  justify-content: space-between;
-  
   /*
   justify-content: same direction as flex-direction
   */
@@ -153,7 +154,8 @@ h1 {
   font-size: x-large;
   display: flex;
   align-items: center;
-
+  text-decoration: underline solid red;
+  
 }
 .project-tags {
   order: 2;
@@ -161,6 +163,7 @@ h1 {
   margin-top: 5px;
   display: flex;
   align-items: center;
+  overflow: scroll;
   
 }
 
@@ -173,7 +176,7 @@ h1 {
   font-size: large;
   cursor: default;
   opacity: .9;
-  background-color: #888
+  background-color: #888;
 }
 .project-description{
   margin-top: 5px;
@@ -186,7 +189,7 @@ h1 {
 .project-links {
   margin-top: 5px;  
   order: 4;
-  flex: 30%;
+  flex: 1;
   display: flex;
   align-items: center;
 
@@ -200,13 +203,14 @@ h1 {
 }
 /*Project Pictures*/
 .project-demonstration{
-  padding: 10px;
   display: flex;
+  padding: 10px;
   width: auto;
   justify-content: center;
+  overflow: hidden; 
 }
-
- 
+.project-pic{ 
+}
 .stick-left{
   order: 1;
 }
