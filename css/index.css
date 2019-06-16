@@ -182,7 +182,7 @@ h1 {
   margin-top: 5px;
   display: flex;
   align-items: center;
-
+  overflow: hidden;
   
 }
 
@@ -196,6 +196,7 @@ h1 {
   cursor: default;
   opacity: .9;
   background-color: #888;
+  overflow: hidden;
 }
 .project-description{
   margin-top: 5px;
@@ -203,6 +204,7 @@ h1 {
   order: 3;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .project-links {
